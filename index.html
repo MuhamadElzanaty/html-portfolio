@@ -4,20 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-</head>
-<body>
-    <h1>Mohamed Elzanaty's Portfolio</h1>
-    <hr />
-    <h2>Web Developer</h2>
-    <h3>Projects:</h3>
-    <hr />
-<a href="./public/movie-ranking.html"><h4>Movie Ranking Website</h4></a>
-<a href="./public/movie-ranking.html"> <img height="300" src="./assets/images/Movie Ranking.png" /> </a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-<a href="./public/birthday-invite.html"><h4>Birthday Invite Project</h4></a>
-<a href="./public/birthday-invite.html"> <img height="300" src="./assets/images/Birthday Project.png"/></a>
-<a href="./public/about.html">About</a>
-<a href="./public/contact.html">Contact</a>
+    <style>
+      body{
+        background-color: #f8f7f5;
+      }
+
+      h1{
+        display: flex;
+        justify-content: center;
+        color: #860A35;
+      }
+
+      h2{
+        display: flex;
+        justify-content: center;
+      }
+
+      .projects{
+        display: flex;
+        justify-content: center;
+        height: 85vh;
+        gap: 2rem;
+      }
+
+      .birthday-invite{
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #F4EAE0 ;
+      border-radius: 10px;
+      text-align: center;
+      }
+
+      .movie-ranking{
+        flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #F4EAE0 ;
+      border-radius: 10px;
+      text-align: center;
+      }
+
+      img{
+        display: flex;
+        height: 300px;
+        width: 300px;
+        justify-self: center;
+        align-items: center;
+
+      }
+
+      .title{
+        display: flex;
+        align-items: center;
+        align-self: center;
+      }
+
+      .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      button{
+        margin: 10px;
+      }
+
+      h3{
+        display: flex;
+        width: 135px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #83A2FF;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+      }
+
+
+          @media (max-width: 1250px) {
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+    </style>
+  </head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <i class="bi bi-android"></i>
+      <a class="navbar-brand" href="#"></i>Developer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.facebook.com/MohamedElzanaty99.">Profile</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./public/about.html">About</a></li>
+              <li><a class="dropdown-item" href="./public/contact.html">Contact</a></li>
+              <li><hr class="dropdown-divider"></li>
+             
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    <h1>Mohamed Elzanaty</h1>
+    <h2>Web Developer</h2>
+    <hr>
+    <h3>Projects:</h3>
+    <div class="projects">
+<div class="movie-ranking">
+  <a class= "title" href="./public/movie-ranking.html"><h4>Movie Ranking Website</h4></a>
+  <a href="./public/movie-ranking.html"> <img src="./assets/images/Movie Ranking.png" /> </a>
+</div>
+<div class="birthday-invite">
+<a class= "title" href="./public/birthday-invite.html"><h4>Birthday Invitation</h4></a>
+<a href="./public/birthday-invite.html"> <img src="./assets/images/Birthday Project.png"/></a>
+</div>
+    </div>
+    <div class="buttons">
+    <button type="button" class="btn btn-info"><a href="./public/about.html">About</a></button>
+    <button type="button" class="btn btn-info"><a href="./public/contact.html">Contact</a></button>
+  </div>
 </body>
 </body>
 </html>
